@@ -93,7 +93,6 @@ h1, h2, h3 { font-family: var(--display); margin: 0; letter-spacing: -0.02em; }
 .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
 .btn-ghost:hover { border-color: var(--text); box-shadow: none; }
 .btn-small { padding: 9px 18px; font-size: 0.9rem; }
-.btn-lg { padding: 20px 34px; font-size: 1.1rem; }
 
 /* Hero */
 .hero {
@@ -309,7 +308,6 @@ h1, h2, h3 { font-family: var(--display); margin: 0; letter-spacing: -0.02em; }
   overflow: hidden;
   isolation: isolate;
 }
-.cta h2 { margin-bottom: 40px; }
 .grad {
   background: linear-gradient(90deg, var(--lime), var(--orange), var(--violet), var(--lime));
   background-size: 300% 100%;
