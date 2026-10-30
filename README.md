@@ -1,13 +1,18 @@
 # Latars
 
-Latars is a studio hub for bold projects: Neighbourly (neighbourly.ng), BAK Network (baknetwork.com), and Moonshot Networking (moonshot.latars.xyz).
+Latars is a product studio. Projects:
 
-This is a static site with no build step. Open `index.html` in a browser, or serve the folder:
+- **Neighbourly** ([neighbourly.ng](https://neighbourly.ng)): an AI guide and business directory for Redemption Camp.
+- **Bak Network** ([baknetwork.com](https://baknetwork.com)): a community for the people behind the scenes in the creator economy.
+- **Moonshot Connect** ([moonshot.latars.xyz](https://moonshot.latars.xyz)): find the people you met at Moonshot by TechCabal.
+
+This is a static site with no build step, deployed on Railway. To preview locally:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-- `index.html`: page content (projects, approach, contact)
-- `styles.css`: dark premium theme, animations, responsive layout
-- `script.js`: rotating hero word, scroll reveals, count-up stats, card spotlight
+- `index.html`: page content
+- `styles.css`: layout and theme
+- `script.js`: reactive wordmark, cursor, hover previews, WAT clock
+- `assets/`: preview screenshots of each project, shown on hover

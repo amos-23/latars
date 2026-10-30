@@ -3,145 +3,80 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Latars — A studio for bold projects</title>
-  <meta name="description" content="Latars is a studio that builds, launches and scales ambitious projects — Neighbourly, BAK Network and Moonshot Networking.">
-  <meta name="theme-color" content="#0b0b0d">
+  <title>Latars — Studio</title>
+  <meta name="description" content="Latars is a studio building products for the communities we're part of: Neighbourly, Bak Network and Moonshot Connect.">
+  <meta name="theme-color" content="#0c0c0c">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="grain" aria-hidden="true"></div>
+<body id="top">
+  <div class="cursor is-hidden" aria-hidden="true"></div>
+  <div class="preview" aria-hidden="true">
+    <img src="assets/neighbourly.jpg" alt="" data-project="neighbourly">
+    <img src="assets/bak-network.jpg" alt="" data-project="bak">
+    <img src="assets/moonshot-connect.jpg" alt="" data-project="moonshot">
+  </div>
 
-  <header class="nav">
-    <a href="#top" class="logo" aria-label="Latars home">
-      <span class="logo-mark" aria-hidden="true"></span>LATARS
-    </a>
-    <nav class="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#approach">Approach</a>
-      <a href="#contact" class="btn btn-small">Build with us</a>
-    </nav>
+  <header class="top">
+    <span>Latars</span>
+    <span class="top-mid">Product studio</span>
+    <span>Nigeria <span class="clock" id="clock">--:--:--</span> WAT</span>
   </header>
 
-  <main id="top">
-    <!-- Hero -->
-    <section class="hero">
-      <div class="orb orb-a" aria-hidden="true"></div>
-      <div class="orb orb-b" aria-hidden="true"></div>
-
-      <p class="eyebrow reveal"><span class="pulse"></span> Studio hub · Projects in motion</p>
-      <h1 class="hero-title reveal">
-        We build<br>
-        <span class="rotator" aria-live="polite">
-          <span class="rotator-word is-active">bold</span>
-          <span class="rotator-word">loud</span>
-          <span class="rotator-word">useful</span>
-          <span class="rotator-word">unstoppable</span>
-        </span><br>
-        projects.
-      </h1>
-      <p class="hero-sub reveal">
-        Latars is a studio hub where ideas get the team, the craft and the momentum
-        to become real products. One house. Many launches.
+  <main>
+    <section class="intro">
+      <p class="lede">
+        A studio building products for the communities we're part of —
+        <em>the camp</em>, <em>the creator economy</em>, <em>the conference floor</em>.
       </p>
-      <div class="hero-cta reveal">
-        <a href="#projects" class="btn">See the projects <span aria-hidden="true">→</span></a>
-        <a href="#contact" class="btn btn-ghost">Start something</a>
-      </div>
-
-      <div class="stats reveal">
-        <div><strong data-count="3">0</strong><span>Live projects</span></div>
-        <div><strong data-count="1">0</strong><span>Studio hub</span></div>
-        <div><strong>∞</strong><span>Ideas in the queue</span></div>
-      </div>
+      <h1 class="wordmark" aria-label="Latars">
+        <span aria-hidden="true">L</span><span aria-hidden="true">A</span><span aria-hidden="true">T</span><span aria-hidden="true">A</span><span aria-hidden="true">R</span><span aria-hidden="true">S</span>
+      </h1>
     </section>
 
-    <!-- Marquee -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Neighbourly</span><i>✦</i><span>BAK Network</span><i>✦</i><span>Moonshot Networking</span><i>✦</i>
-        <span>Neighbourly</span><i>✦</i><span>BAK Network</span><i>✦</i><span>Moonshot Networking</span><i>✦</i>
-      </div>
-    </div>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="section-head reveal">
-        <p class="eyebrow">The portfolio</p>
-        <h2>Projects out of<br>the Latars studio.</h2>
+    <section class="index" aria-labelledby="index-title">
+      <div class="index-head">
+        <h2 id="index-title">Index</h2>
+        <span>(03)</span>
       </div>
 
-      <div class="projects">
-        <a class="project reveal" href="https://neighbourly.ng" target="_blank" rel="noopener" style="--accent: #c6ff3d">
-          <span class="project-num">01</span>
-          <div class="project-body">
-            <span class="tag tag-live">Live</span>
-            <h3>Neighbourly</h3>
-            <p>Bringing neighbours closer — community, trust and everyday connection, built for where people actually live.</p>
-          </div>
-          <span class="project-arrow" aria-hidden="true">↗</span>
-        </a>
-
-        <a class="project reveal" href="https://baknetwork.com" target="_blank" rel="noopener" style="--accent: #7a5cff">
-          <span class="project-num">02</span>
-          <div class="project-body">
-            <span class="tag tag-live">Live</span>
-            <h3>BAK Network</h3>
-            <p>A network built to connect people and opportunity — find your people, grow your reach.</p>
-          </div>
-          <span class="project-arrow" aria-hidden="true">↗</span>
-        </a>
-
-        <a class="project reveal" href="https://moonshot.latars.xyz" target="_blank" rel="noopener" style="--accent: #3dd6ff">
-          <span class="project-num">03</span>
-          <div class="project-body">
-            <span class="tag tag-live">Live</span>
-            <h3>Moonshot Networking</h3>
-            <p>Networking for people who aim past the obvious. Built for the ones going for the moon.</p>
-          </div>
-          <span class="project-arrow" aria-hidden="true">↗</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- Approach -->
-    <section id="approach" class="section">
-      <div class="section-head reveal">
-        <p class="eyebrow">How we work</p>
-        <h2>Studio energy.<br>Product discipline.</h2>
-      </div>
-      <div class="pillars">
-        <article class="pillar reveal">
-          <span class="pillar-icon">⚡</span>
-          <h3>Spark</h3>
-          <p>We hunt for problems worth solving and move fast from idea to first version.</p>
-        </article>
-        <article class="pillar reveal">
-          <span class="pillar-icon">◆</span>
-          <h3>Craft</h3>
-          <p>Shared design, engineering and growth muscle — every project ships with polish.</p>
-        </article>
-        <article class="pillar reveal">
-          <span class="pillar-icon">↑</span>
-          <h3>Scale</h3>
-          <p>What works gets fuel. Projects graduate with real users and real momentum.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section id="contact" class="cta reveal">
-      <div class="orb orb-c" aria-hidden="true"></div>
-      <p class="eyebrow">Next up</p>
-      <h2>Got a moonshot?<br><span class="grad">Let's build it.</span></h2>
+      <ol class="rows">
+        <li>
+          <a class="row" href="https://neighbourly.ng" target="_blank" rel="noopener" data-project="neighbourly" style="--c: #1e5bff">
+            <span class="num">01</span>
+            <span class="name">Neighbourly</span>
+            <span class="desc">An AI guide to Redemption Camp. Ask anything and find local businesses, events and jobs in one place.</span>
+            <span class="meta">Local discovery<br><u>neighbourly.ng</u> ↗</span>
+          </a>
+        </li>
+        <li>
+          <a class="row" href="https://baknetwork.com" target="_blank" rel="noopener" data-project="bak" style="--c: #e3241b">
+            <span class="num">02</span>
+            <span class="name">Bak Network</span>
+            <span class="desc">The creator gets the credit. You did the work. A community for the editors, ad buyers, marketers and assistants behind the creator economy.</span>
+            <span class="meta">Community<br><u>baknetwork.com</u> ↗</span>
+          </a>
+        </li>
+        <li>
+          <a class="row" href="https://moonshot.latars.xyz" target="_blank" rel="noopener" data-project="moonshot" style="--c: #f26b1d">
+            <span class="num">03</span>
+            <span class="name">Moonshot Connect</span>
+            <span class="desc">Find the people you met at Moonshot by TechCabal, Lagos 2026. Search a name, follow up. No sign-up.</span>
+            <span class="meta">Events<br><u>moonshot.latars.xyz</u> ↗</span>
+          </a>
+        </li>
+      </ol>
     </section>
   </main>
 
-  <footer class="footer">
-    <span>© <span id="year"></span> Latars Studio</span>
-    <span>Neighbourly · BAK Network · Moonshot Networking</span>
+  <footer class="bottom">
+    <p class="next">More in the works<span class="blink">_</span></p>
+    <div class="bottom-row">
+      <span>© <span id="year"></span> Latars</span>
+      <a href="#top" class="totop">Back to top ↑</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
