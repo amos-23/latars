@@ -1,0 +1,10 @@
+{
+  "name": "latars",
+  "private": true,
+  "description": "The Latars site, plus a forward to the admin at /adminx.",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=18" }
+}
