@@ -7,14 +7,21 @@ Latars is a product studio. Projects:
 - **Event Connect** ([events.latars.xyz](https://events.latars.xyz)): meet the right people at events like Moonshot by TechCabal.
 - **AdsSim** ([ads.latars.xyz](https://ads.latars.xyz)): an ad-buying flight simulator for practising campaigns on Meta, TikTok, Google, X and ChatGPT ads without spending money.
 
-This is a static site with no build step, deployed on Railway. To preview locally:
+The site is plain static files, served by a small dependency-free Node server (`server.js`) that also forwards the admin to the events app (see **Admin** below). Deployed on Railway with `npm start`. To preview locally:
 
 ```sh
-python3 -m http.server 8000
+npm start   # http://localhost:8000
+npm test
 ```
 
 - `index.html`: page content
 - `styles.css`: layout and theme
 - `script.js`: reactive wordmark, cursor, hover previews, WAT clock
 - `assets/`: preview screenshots of each project, shown on hover
-- `adminx/index.html`: `latars.xyz/adminx`, the one link to every admin (Event Connect and AdsSim). It forwards to the admin home served by the events app at `events.latars.xyz/adminx`, which asks for the admin sign-in.
+- `server.js`: serves the files above (only those) and forwards the admin paths (`/adminx`, `/admin`, and the app's `/_next`, `/api` and photo paths) to the events app, so **`latars.xyz/adminx` is the one link to every admin** and the address stays on latars.xyz. `ADMIN_UPSTREAM` sets where the admin runs (default `https://events.latars.xyz`).
+
+## Admin
+
+`latars.xyz/adminx` shows the admin sign-in and, once signed in, Event Connect and AdsSim in one place. Sign in with the admin key there. (Admin accounts that sign in by email do so at `events.latars.xyz/adminx`, because that login's cookie belongs to that address.) Nothing else on the events app is reachable through `latars.xyz`.
+
+On Railway this service must run `npm start` (Node); the folder no longer needs a static-site setting.
